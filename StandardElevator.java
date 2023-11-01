@@ -1,20 +1,15 @@
 package com.example.elevatorsimulator;
 
-public class StandardElevator extends Elevator{
+public class StandardElevator extends Elevator {
+
+    public StandardElevator(int _elevatorID, String _elevatorType, int _weightCapacity) {
+        super(_elevatorID, _elevatorType, _weightCapacity);
+    }
+
     @Override
     public boolean move(direction _direction) {
-        if(_direction == direction.UP){
-
-        }
-        else if(_direction == direction.DOWN)
-        {
-
-        }
-        else{
-            System.out.println("Incorrect Input");
-            return false;
-        }
-        return true;
+        return false;
     }
 }
+
 
